@@ -1,0 +1,235 @@
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3.5rem;
+}
+
+.logo {
+  font-family: 'KinderLandDEMO-Regular-BF69a828ec798a9';
+  font-size: 50px;
+  color: #ffffff;
+  margin: 0 60px;
+}
+
+span {
+  color: #9b0505;
+}
+  
+nav {
+  margin-left: 1rem;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 5rem;
+  padding: 0 0.1rem;
+  font-weight: 900;
+}
+nav a:hover {
+  color: #9b0505;
+}
+
+.btn-primary {
+  margin: 0 5rem;
+  display: inline-block;
+  padding: 12px 50px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to bottom, #090d11 0%, #090d11 50%, #090d11 100%);
+  border-radius: 6px;
+}
+
+.btn-primary:hover {
+  color: #9b0505;
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 12px 50px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to bottom, #090d11 0%, #090d11 50%, #090d11 100%);
+  border-radius: 6px;
+}
+
+.btn-secondary:hover {
+  color: #9b0505;
+}
+
+@media (max-width: 1440.99px) {
+
+
+nav {
+  margin-left: .7rem;
+}
+
+nav a {
+  margin: 0 2rem;
+}
+
+.btn-primary {
+  margin: 0 4rem;
+}
+
+}
+
+
+@media (max-width: 1325.99px){
+  nav a {
+  margin: 0 1rem;
+}
+
+
+.btn-primary {
+  margin: 0 3rem;
+}
+
+}
+
+@media (max-width: 1024.99px) {
+  #header {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo {
+    margin: 5px 4rem;
+  }
+
+  nav {
+    display: grid;
+    grid-auto-flow: column;
+    margin: 0 4rem;
+  }
+  nav a {
+    margin: 1rem 0.1rem;
+    padding: 1 0.6rem;
+    font-size: 1.6rem;
+  }
+  .btn-primary {
+    margin: 0 0.6rem;
+    padding: 7px 20px;
+  }
+
+  .btn-secondary {
+    margin: 0 1rem;
+    padding: 7px 14px;
+  }
+}
+
+@media (max-width: 768.99px) {
+  #header {
+    display: block;
+    padding: 0 3rem;
+  }
+
+  .logo {
+    margin: 9px 2rem;
+  }
+
+  nav {
+    display: grid;
+    grid-auto-flow: column;
+    margin: 0;
+    padding: 0 0.2rem;
+  }
+  nav a {
+    margin: 1rem 0;
+    padding: 0 1rem;
+  }
+
+  .btn-primary {
+    margin: 0 0.6rem;
+    padding: 1px 25px;
+  }
+
+  .btn-secondary {
+    margin: 0 .5rem;
+    padding: 1px 20px;
+  }
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.menu-toggle:hover {
+  color: #9b0505;
+}
+
+nav {
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 425.99px) {
+  #header {
+    position: relative;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    margin: 1.5rem 3rem;
+    font-size: 30px;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    left: 1.1rem;
+    top: 1.8rem;
+  }
+
+  nav {
+    display: none;;
+    flex-direction: column;
+    position: absolute;
+    top: 4.7rem;
+    left: -3rem;
+    right: 4rem;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  nav.open {
+    display: flex;
+    margin: 1px 2rem;
+    padding-top: 1rem;
+  }
+
+  nav a {
+    margin: 10px 0;
+    padding: 10px 2rem;
+    border-bottom: 1px solid #333;
+  }
+
+  nav a:last-child {
+    border-bottom: none;
+  }
+
+  .btn {
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+

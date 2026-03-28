@@ -1,0 +1,111 @@
+<main>
+  <section id="contact">
+    <h5>Contact Us</h5>
+    <h1>Get in touch with us!</h1>
+    <p>
+      I'm always open to learning opportunities, <br />
+      feedback on my projects, or just chatting <br />
+      about frontend development. Drop me a message <br />
+      or reach out through any of the channels <br />
+      below.
+    </p>
+
+    <div class="contact-post">
+      <ul>
+        <li><a href="mailto:contact@example.com">Email Me</a></li>
+        <li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/yourhandle" target="_blank">GitHub</a></li>
+        <li><a href="https://twitter.com/yourhandle" target="_blank">Twitter</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="form">
+    <form [formGroup]="contactInfo">
+      <div class="name">
+        <label for="id" class="form-label">Name</label>
+        <input
+          type="text"
+          formControlName="name"
+          name="name"
+          required
+          minlength="5"
+          class="form-control"
+          id="name"
+          placeholder="Enter Your Name"
+        />
+        @if (contactInfo.controls['name'].touched || contactInfo.controls['name'].dirty) {
+          <div class="text-danger">
+            @if (contactInfo.controls['name'].errors?.['requred']) {
+              <span>This is Required</span>
+            } @else if (contactInfo.controls['name'].errors?.['minlength']) {
+              <span>Min 5 Char Needed</span>
+            }
+          </div>
+        }
+      </div>
+
+      <div class="email">
+        <label for="id" class="form-label">Email</label>
+        <input
+          type="email"
+          formControlName="email"
+          name="email"
+          required
+          minlength="7"
+          class="form-control"
+          id="email"
+          placeholder="Enter Your Email"
+        />
+        @if (contactInfo.controls['email'].touched || contactInfo.controls['email'].dirty) {
+          <div class="text-danger">
+            @if (contactInfo.controls['email'].errors?.['requred']) {
+              <span>This is Required</span>
+            } @else if (contactInfo.controls['email'].errors?.['minlength']) {
+              <span>Min Char Needed</span>
+            }
+          </div>
+        }
+      </div>
+
+       <div class="message">
+        <label for="message" class="form-label">Message</label>
+        <br>
+        <textarea
+          type="text"
+        formControlName="message"
+          name="message"
+          required
+          minlength="20"
+          class="form-control"
+          id="message"
+          cols="20"
+          rows="8"
+          placeholder="Send a Message"></textarea>
+
+        @if (contactInfo.controls['message'].touched || contactInfo.controls['message'].dirty) {
+          <div class="text-danger">
+            @if (contactInfo.controls['message'].errors?.['requred']) {
+              <span>This is Required</span>
+            } @else if (contactInfo.controls['message'].errors?.['minlength']) {
+              <span>Min 20 Char Needed</span>
+            }
+          </div>
+        }
+      </div>
+      
+      <div>
+        <button
+          type="submit"
+          (click)="onSubmit()"
+          class="btn btn-primary"
+        >
+          Send Message
+        </button>
+        
+       <button type="button" (click)="onReset()"class="btn btn-secondary"
+        >Reset</button>
+      </div>
+    </form>
+  </section>
+</main>

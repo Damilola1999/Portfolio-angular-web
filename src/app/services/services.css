@@ -1,0 +1,134 @@
+#services {
+  margin: 6rem 25rem;
+  padding: 1rem 1rem;
+  display: inline-block;
+  justify-self: center;
+  align-self: center;
+}
+
+table,
+tr,
+th,
+td,
+caption {
+  border: 1px solid #eee;
+  font-family: 'Times New Roman', Times, serif;
+  border-collapse: collapse;
+  padding: 2rem 6rem;
+}
+
+/*table, tr, th, td, caption h2{
+    color: black;
+}*/
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+p {
+  font-size: 0.9rem;
+  color: #9b0505;
+}
+
+@media (max-width: 1440.99px) {
+  #services {
+    margin: 1rem 10rem;
+    padding: 4rem 12rem;
+  }
+}
+
+@media (max-width: 1325.99px) {
+  #services {
+    margin: 1rem 7rem;
+    padding: 0.1rem 5rem;
+  }
+}
+
+@media (max-width: 1024.99px) {
+  #services {
+    margin: 1rem 1.9rem;
+    padding: 0.1rem 1.9rem;
+  }
+
+  table,
+  tr,
+  th,
+  td,
+  caption {
+    padding: 2rem 5rem;
+  }
+}
+
+@media (max-width: 768.99px) {
+  #services {
+    margin: 1rem 0.1rem;
+    padding: 1rem 3rem;
+  }
+
+  table,
+  tr,
+  th,
+  td,
+  caption {
+    padding: 1rem 3rem;
+  }
+}
+
+@media (max-width: 425.99px) {
+  #services {
+    margin-right: 1rem;
+    padding: 1rem 1rem;
+  }
+  table,
+  tr,
+  th,
+  td,
+  caption {
+    padding: 1rem 0.8rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 375.99px) {
+  #services {
+    margin-right: 1rem;
+    padding: 1rem 0.7rem;
+  }
+  table,
+  tr,
+  th,
+  td,
+  caption {
+    padding: 1rem 0.4rem;
+  }
+}
+
+@media (max-width: 320.99px) {
+  #services {
+    margin-right: 0.6rem;
+    padding: 1rem 0.6rem;
+  }
+  table,
+  tr,
+  th,
+  td,
+  caption {
+    padding: 1rem 0.6rem;
+  }
+
+  h2 {
+    font-size: 0.7rem;
+  }
+
+  p {
+    font-size: 0.7rem;
+  }
+}

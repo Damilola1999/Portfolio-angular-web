@@ -1,0 +1,264 @@
+main {
+  display: flex;
+  margin: 3rem 0;
+}
+#contact {
+  margin: 0 14rem;
+  padding: 1rem 1rem;
+  display: block;
+}
+
+h5 {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+  font-family: 'RocketBrush-DYwyW';
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.contact-post {
+  display: block;
+  margin: 2rem -3rem;
+}
+
+.contact-post li {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.contact-post a {
+  border: 1px solid white;
+  padding: 1rem 9rem;
+  color: #9b0505;
+}
+
+#form {
+  margin: 1rem 20rem;
+  padding: 1rem 1rem;
+}
+
+.name {
+  margin: 0 10rem;
+  display: inline-block;
+}
+
+.email {
+  margin: 1rem 10rem;
+  display: inline-block;
+}
+
+.message {
+  margin: 1rem 10rem;
+  display: inline-block;
+}
+
+.form-label {
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: 'Times New Roman', Times, serif;
+  color: #9b0505;
+}
+
+.form-control {
+  padding: 1rem 5rem;
+  border: #090d11;
+  background: linear-gradient(to bottom, #090d11 0%, #090d11 50%, #090d11 100%);
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+  background: #090d11;
+  background-color: #090d11;
+}
+
+.text-danger {
+  margin: 0.2rem 1rem;
+  padding: 0.3rem 1rem;
+  color: red;
+}
+
+.btn-primary {
+  margin: 0.5rem 10rem;
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #ffffff 100%);
+  border-radius: 6px;
+}
+
+.btn-primary:hover {
+  color: #9b0505;
+}
+
+.btn-secondary {
+  margin: 1rem 10rem;
+  display: inline-block;
+  padding: 1.5rem 5rem;
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #ffffff 100%);
+  border-radius: 6px;
+}
+
+.btn-secondary:hover {
+  color: #9b0505;
+}
+
+@media (max-width: 1440.99px) {
+  main {
+    display: flex;
+    margin: 1rem 4rem;
+    padding: 2rem 8rem;
+  }
+  #contact {
+    margin: 0 4rem;
+    padding: 1rem 3rem;
+  }
+
+  #form {
+    margin: 1rem 0.3rem;
+    padding: 1rem 1rem;
+  }
+}
+
+@media (max-width: 1325.99px) {
+  main {
+    display: flex;
+    margin: 1rem 0;
+  }
+
+  #contact {
+    margin: 0 4.5rem;
+    padding: 1rem 0.3rem;
+  }
+
+  #form {
+    margin: 1rem 0.3rem;
+    padding: 1rem 0.1rem;
+  }
+}
+
+@media (max-width: 1024.99px) {
+  main {
+    display: flex;
+    margin: 1rem 1rem;
+  }
+  #contact {
+    margin: 0;
+    padding: 1rem 0;
+    display: block;
+  }
+
+  #form {
+    margin: 1rem 0;
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 768.99px) {
+  main {
+    display: grid;
+    grid-auto-flow: row;
+    margin: 1rem 1rem;
+  }
+
+  #form {
+    margin-left: -9rem;
+  }
+}
+
+@media (max-width: 425.99px) {
+  main {
+    margin-left: -7rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .message {
+    margin: 1rem 10rem;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 375.99px) {
+  main {
+    margin-left: -7.3rem;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .contact-post a {
+    padding: 1rem 8rem;
+  }
+
+  .name {
+    margin: 0 9rem;
+    display: inline-block;
+  }
+
+  .email {
+    margin: 1rem 9rem;
+    display: inline-block;
+  }
+
+  .message {
+    margin: 1rem 9rem;
+    display: inline-block;
+  }
+
+  .btn-primary {
+    padding: 1rem 2rem;
+  }
+
+  .btn-secondary {
+    padding: 1rem 3.9rem;
+  }
+}
+
+
+
+@media (max-width: 320.99px){
+   h1 {
+    font-size: 1.7rem;
+  }
+p {
+  font-size: .8rem;
+}
+  .contact-post a {
+    padding: 1rem 6rem;
+  }
+
+  #form {
+    margin-left: -9.8rem;
+  }
+
+}
