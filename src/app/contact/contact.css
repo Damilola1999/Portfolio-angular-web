@@ -246,7 +246,7 @@ p {
 
 
 
-@media (max-width: 320.99px){
+@media (min-width: 320.99px){
    h1 {
     font-size: 1.7rem;
   }
