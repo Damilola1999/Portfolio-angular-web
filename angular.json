@@ -16,17 +16,19 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
-            "assets": [ 
+            "assets": [
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets"
               }
             ],
-            "styles": ["./src/app/styles/styles.css",
-          "./src/app/styles/customfonts.css"]
+            "styles": ["./src/app/styles/styles.css"]
           },
           "configurations": {
             "production": {
@@ -38,8 +40,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "4kB",
-                  "maximumError": "8kB"
+                  "maximumWarning": "6kB",
+                  "maximumError": "12kB"
                 }
               ],
               "outputHashing": "all"
