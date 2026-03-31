@@ -8,7 +8,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   selector: 'app-header',
   imports: [RouterLink, RouterLinkActive, MatButtonModule, MatIconModule, MatToolbarModule],
   templateUrl: './header.html',
-  styleUrl: './header.css',
+  styleUrls: ['./header.css'],
 })
 export class Header {
   isMenuOpen = false;

@@ -1,8 +1,12 @@
 <header id="header">
     <h2 class="logo">Dan<span>Dami.</span></h2>
+
+    
+
     <button class="menu-toggle" (click)="toggleMenu()" aria-label="Toggle navigation">
-        <mat-icon>{{ isMenuOpen ? 'close' : 'menu' }}</mat-icon>
+      <mat-icon>{{ isMenuOpen ? 'close' : 'menu' }}</mat-icon>
     </button>
+
     <nav [class.open]="isMenuOpen">
         <a routerLink="/" routerLinkActive="active">Home</a>
         <a routerLink="/about" routerLinkActive="active">About</a>
@@ -12,6 +16,7 @@
         <button class="btn btn-primary">Login</button>
         <button class="btn btn-secondary">Register</button>
     </nav>
+
 </header>
 
 
