@@ -15,6 +15,7 @@
 span {
   color: #9b0505;
 }
+
   
 nav {
   margin-left: 1rem;
@@ -129,7 +130,9 @@ nav a {
   }
 }
 
-@media (max-width: 768.99px) {
+
+
+@media (min-width: 768.99px) {
   #header {
     display: block;
     padding: 0 3rem;
@@ -179,26 +182,25 @@ nav {
   transition: all 0.3s ease;
 }
 
-@media (max-width: 425.99px) {
+@media (min-width: 425.99px) {
   #header {
     position: relative;
     padding: 10px 20px;
   }
 
   .logo {
-    margin: 1.5rem 3rem;
-    font-size: 30px;
+    margin: 1.5rem 1rem;
+    font-size: 70px;
   }
 
   .menu-toggle {
     display: block;
-    position: absolute;
     left: 1.1rem;
     top: 1.8rem;
   }
 
   nav {
-    display: none;;
+    display: none;
     flex-direction: column;
     position: absolute;
     top: 4.7rem;
@@ -227,9 +229,10 @@ nav {
 
   .btn {
     margin: 10px 0;
-    width: 100%;
+    width: 10%;
     text-align: center;
   }
 }
+
 
 
