@@ -113,7 +113,7 @@ nav{
 @media (max-width: 1325.99px){
   #header{
   display: flex;
-  margin: 0 6rem;
+  margin: 0 12rem;
   padding: 0 .5rem;
   gap: 1rem;
 }
@@ -121,7 +121,7 @@ nav{
 nav{
   display: flex;
   gap: 2rem;
-  margin: 4rem 6rem;
+  margin: 4rem 13rem;
 }
 
 }
@@ -241,54 +241,60 @@ nav{
 
 
 @media (min-width: 425px){
-
-  #header {
+#header {
     align-items: center;
     gap: 1rem;
     margin: 0 1rem;
   }
+
   .logo{
   font-size: 2rem;
+  margin: 2rem 4rem;
 }
 
   .menu-toggle {
     display: block;
-    margin: 2.5rem 12rem;
+    margin-top: .1rem;
+    margin-left: -19rem;
   }
 
-  nav.open {
+   nav.open {
     display: flex;
     max-height: 500px;
     padding: 1rem 2rem;
     margin-top: .1rem;
-    margin-right: 1rem;
-    margin-left: 4rem;
+    margin-right: 3rem;
+    margin-left: 0;
     opacity: 1;
   }
 }
 
 
 @media (min-width: 375px){
-  #header {
+ #header {
     align-items: center;
     gap: 1rem;
     margin: 0 1rem;
   }
+
   .logo{
   font-size: 2rem;
+  margin: 2rem 4rem;
 }
 
   .menu-toggle {
     display: block;
-    margin: 2.4rem 9rem;
+    margin-top: .1rem;
+    margin-left: -19rem;
   }
+
    nav.open {
     display: flex;
     max-height: 500px;
     padding: 1rem 2rem;
     margin-top: .1rem;
-    margin-right: 1rem;
-    margin-left: 4rem;
+    margin-right: 3rem;
+    margin-left: 0;
     opacity: 1;
   }
 }
@@ -302,11 +308,13 @@ nav{
 
   .logo{
   font-size: 2rem;
+  margin: 2rem 4rem;
 }
 
   .menu-toggle {
     display: block;
-    margin: 2.5rem 1rem;
+    margin-top: .1rem;
+    margin-left: -19rem;
   }
 
    nav.open {
@@ -314,8 +322,8 @@ nav{
     max-height: 500px;
     padding: 1rem 2rem;
     margin-top: .1rem;
-    margin-right: 1rem;
-    margin-left: 4rem;
+    margin-right: 3rem;
+    margin-left: 0;
     opacity: 1;
   }
 }

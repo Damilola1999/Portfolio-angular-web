@@ -142,7 +142,7 @@ p {
   }
 
   #form {
-    margin: 1rem 0.3rem;
+    margin: 1rem 3rem;
     padding: 1rem 1rem;
   }
 }
@@ -246,7 +246,7 @@ p {
 
 
 
-@media (min-width: 320.99px){
+@media (max-width: 320.99px){
    h1 {
     font-size: 1.7rem;
   }
